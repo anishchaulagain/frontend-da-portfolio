@@ -11,8 +11,8 @@ export default function ContactPage() {
           </p>
 
           <div className="space-y-6">
-            <a href="mailto:hello@nanu.design" className="block text-2xl hover:text-primary transition-colors">
-              hello@nanu.design
+            <a href="mailto:contact@acharyadipika.com.np" className="block text-2xl hover:text-primary transition-colors">
+               contact@acharyadipika.com.np
             </a>
             <div className="flex gap-6 text-muted-foreground">
               <a href="#" className="hover:text-white transition-colors">Twitter</a>
@@ -37,9 +37,9 @@ export default function ContactPage() {
              <label className="text-sm text-muted-foreground">Budget</label>
              <select className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors text-white [&>option]:text-black">
                 <option>Select a range</option>
-                <option>$5k - $10k</option>
-                <option>$10k - $25k</option>
-                <option>$25k+</option>
+                <option>Rs. 5000 - Rs. 10000</option>
+                <option>Rs. 10000 - Rs. 25000</option>
+                <option>Rs. 25000+</option>
              </select>
           </div>
           <div className="space-y-2">

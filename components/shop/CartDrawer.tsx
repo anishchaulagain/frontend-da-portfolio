@@ -8,11 +8,11 @@ export default function CartDrawer() {
   const { items, removeFromCart, total, isCartOpen, setIsCartOpen } = useCart();
 
   const handleCheckout = () => {
-    const phoneNumber = "9779866335500"; // Replace with actual number
+    const phoneNumber = "9779866335500"; 
     const message = encodeURIComponent(
       `Hello, I would like to order:\n\n${items
-        .map((item) => `- ${item.name} (x${item.quantity}) - $${item.price * item.quantity}`)
-        .join('\n')}\n\nTotal: $${total}`
+        .map((item) => `- ${item.name} (x${item.quantity}) - Rs.${item.price * item.quantity}`)
+        .join('\n')}\n\nTotal: Rs.${total}`
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
@@ -64,7 +64,7 @@ export default function CartDrawer() {
                     
                     <div className="flex-1">
                       <h4 className="font-bold">{item.name}</h4>
-                      <p className="text-sm text-muted-foreground">${item.price} x {item.quantity}</p>
+                      <p className="text-sm text-muted-foreground">Rs.{item.price} x {item.quantity}</p>
                     </div>
                     
                     <button 
@@ -81,7 +81,7 @@ export default function CartDrawer() {
             <div className="border-t border-white/10 pt-6 mt-4">
               <div className="flex justify-between items-center mb-6 text-xl font-bold">
                 <span>Total</span>
-                <span>${total}</span>
+                <span>Rs.{total}</span>
               </div>
               <button
                 onClick={handleCheckout}

@@ -44,7 +44,7 @@ export default function ProductCard({ product }: ProductProps) {
         <div className="text-xs text-primary font-mono mb-2 uppercase tracking-wider">{product.category}</div>
         <h3 className="text-xl font-bold mb-2">{product.name}</h3>
         <p className="text-muted-foreground text-sm line-clamp-2 mb-4">{product.description}</p>
-        <div className="font-bold text-lg">${product.price}</div>
+        <div className="font-bold text-lg">Rs. {product.price}</div>
       </div>
     </div>
   );
